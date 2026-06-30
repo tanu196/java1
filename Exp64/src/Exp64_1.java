@@ -1,0 +1,53 @@
+class Pokemon{
+	String name;
+	String type;
+	int level;
+	int hp;	
+}
+
+public class Exp64_1 {//main
+	public static void main(String[] args) {
+		Pokemon pikachu = new Pokemon();
+		Pokemon lucario = new Pokemon();
+		Pokemon mokuroh = new Pokemon();
+		
+		
+		pikachu.name = "ピカチュウ";
+		pikachu.type = "でんき";
+		pikachu.level = 10;
+		pikachu.hp = 35;
+		
+		System.out.println("名前：" + pikachu.name); 
+        System.out.println("タイプ：" + pikachu.type); 
+        System.out.println("レベル：" + pikachu.level); 
+        System.out.println("HP：" + pikachu.hp);
+        System.out.println();
+  
+        lucario.name = "ルカリオ";
+		lucario.type = "かくとう";
+		lucario.level = 8;
+		lucario.hp = 70;
+		
+		System.out.println("名前：" + lucario.name); 
+        System.out.println("タイプ：" + lucario.type); 
+        System.out.println("レベル：" + lucario.level); 
+        System.out.println("HP：" + lucario.hp); 
+		System.out.println();
+        
+        mokuroh.name = "モクロー";
+		mokuroh.type = "くさ";
+		mokuroh.level = 8;
+		mokuroh.hp = 45;
+		
+		System.out.println("名前：" + mokuroh.name); 
+        System.out.println("タイプ：" + mokuroh.type); 
+        System.out.println("レベル：" + mokuroh.level); 
+        System.out.println("HP：" + mokuroh.hp); 
+		
+
+	}
+
+}
+
+
+

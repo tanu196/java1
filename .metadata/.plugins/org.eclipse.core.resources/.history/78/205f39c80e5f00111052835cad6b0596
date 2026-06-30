@@ -1,0 +1,21 @@
+
+public class Ens42_challenge4 {
+
+	
+	
+	
+	public static void main(String[] args) {
+		for(int row = 1 ; row <= 5 ; row++) {
+			String result = switch (row) {
+			case 1 -> "A";
+			case 2 -> "B";
+			case 3 -> "C";
+			case 4 -> "D";
+			default -> "E";
+			};
+			System.out.println(result);
+			
+		}
+	}
+
+}

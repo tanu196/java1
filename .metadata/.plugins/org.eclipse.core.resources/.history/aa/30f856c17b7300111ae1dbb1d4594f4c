@@ -1,0 +1,23 @@
+
+public class Exp64_2 {
+
+	public static void main(String[] args) {
+		String word = new String("apple");
+		String empty = new String("");
+		
+		//isEmptyメソッド
+		System.out.println(word.isEmpty());//文字があるかないかの判定で使える
+		System.out.println(empty.isEmpty());
+		
+		//containメソッド
+		String word2 = new String("pineapple");
+		System.out.println(word.contains("apple"));//この単語が入っているかどうかを判定できる
+		System.out.println(word.contains("orange"));
+		
+		String word3 = new String("PineApple");
+		
+		System.out.println(word.toUpperCase());
+		System.out.println(word.toLowerCase());
+	}
+
+}

@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class JavaKeywordSearch {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("検索方法を選んでください");
+		System.out.println("１：文字数で検索");
+		System.out.println("２：頭文字で検索");
+		System.out.print("番号：");
+		int num = sc.nextInt();
+		System.out.print("何文字の予約語を検索しますか：");
+		int num2 = sc.nextInt();
+		System.out.println(num2 + "文字の予約語を表示します");
+
+	}
+
+}

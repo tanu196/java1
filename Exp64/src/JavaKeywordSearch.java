@@ -1,0 +1,67 @@
+import java.util.Scanner;
+public class JavaKeywordSearch {
+
+	public static void main(String[] args) {
+		String[] keywords = { 
+				"abstract", "assert", "boolean", "break", "byte", 
+				"case", "catch", "char", "class", "const", 
+				"continue", "default", "do", "double", "else", 
+				"enum", "extends", "final", "finally", "float", 
+				"for", "goto", "if", "implements", "import", 
+				"instanceof", "int", "interface", "long", "native", 
+				"new", "package", "private", "protected", "public", 
+				"return", "short", "static", "strictfp", "super", 
+				"switch", "synchronized", "this", "throw", "throws", 
+				"transient", "try", "void", "volatile", "while" 
+		}; 
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int count = 0;
+		System.out.println("検索方法を選んでください");
+		System.out.println("１：文字数で検索");
+		System.out.println("２：頭文字で検索");
+		System.out.print("番号：");
+		int num = sc.nextInt();
+		int num2 = 0;
+		String num3 = "";
+		
+		if(num == 1) {
+			System.out.print("何文字の予約語を検索しますか：");
+			num2 = sc.nextInt();
+			System.out.println(num2 + "文字の予約語を表示します");
+		}else if(num == 2) {
+			System.out.print("頭文字を入力してください");
+			num3 = sc.next();
+			System.out.println("「" + num3 + "」から始まる予約語を表示します");
+		}else {
+			System.out.println("エラー");
+		}
+		
+		
+		//検索
+		for(String wow : keywords) {
+			if(num == 1) {
+				if(num2 == wow.length()) {
+					System.out.println(wow);
+					count++;
+				}
+				
+			}else if (num == 2) {
+				char a = num3.charAt(0);
+				if(wow.charAt(0) == a) {
+					System.out.println(wow);
+					count++;
+				}
+			}
+		}
+		
+		System.out.println("一致した予約語：" + count + "個");
+		
+		
+		
+	}
+}
+
+
+	

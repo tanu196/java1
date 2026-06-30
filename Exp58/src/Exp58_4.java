@@ -1,0 +1,29 @@
+
+public class Exp58_4 {
+
+	public static void main(String[] args) {
+		String[][] petKinds = {
+				{ "柴犬" ,"トイプードル" , "チワワ" },	
+				{ "三毛猫" ,"ロシアンブルー" , "スコティッシュフォールド" },	
+				{ "セキセイインコ" ,"文鳥" , "オカメインコ" }	
+		};
+		
+		for(int i = 0 ; i < petKinds.length ; i++) {
+			for(int j = 0 ; j < petKinds[i].length ; j++) {
+				System.out.print(petKinds[i][j] + " ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+		
+		for(String[] KindsGroup : petKinds) {
+			for(String kindsName : KindsGroup) {
+				System.out.print(kindsName + " ");
+			}
+			System.out.println();
+		}
+		
+		
+	}
+
+}

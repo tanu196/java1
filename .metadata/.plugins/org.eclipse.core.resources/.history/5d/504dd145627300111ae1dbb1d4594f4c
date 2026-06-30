@@ -1,0 +1,18 @@
+
+public class ShoppingCalculator2 {
+	public static void main(String[] args) {
+		
+		Item item1 = new Item();
+		item1.itemName = "ノート";
+		itme1.price = 120;
+		item1.quantity = 3;
+		
+		Item item2 = new Item();
+		item2.ItemName = "ペン";
+		item2.price = 80;
+		item2.quantity = 2;
+		
+		
+	}
+
+}

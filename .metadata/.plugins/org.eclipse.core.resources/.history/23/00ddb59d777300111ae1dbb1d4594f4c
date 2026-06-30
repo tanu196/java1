@@ -1,0 +1,22 @@
+class Pokemon{
+	String name;
+	String type;
+	int level;
+	int hp;	
+}
+
+public class Exp64_1 {
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
+
+
+

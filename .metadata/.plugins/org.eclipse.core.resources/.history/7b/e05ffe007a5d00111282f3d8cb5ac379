@@ -1,0 +1,34 @@
+//import java.util.Scanner;
+import java.util.Random;
+public class Pce2 {
+
+	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+		Random rand = new Random();
+		int[] num  = new int[5];
+		System.out.println("MAXとMINを判定します入力してください（５つ）");
+		
+		for(int i = 0 ; i<num.length ;i++) {
+			System.out.println((i+1)+ "個目の数字を入力してください");
+			num[i] = rand.nextInt();
+			
+		}
+		int min = num[0];
+		int max = num[0];
+		
+		for(int i = 0 ; i<num.length ;i++) {
+			if(num[i] < min) {
+				min = num[i];
+			}	
+			if(num[i] > max) {
+				max = num[i];
+			}
+		}
+			
+		System.out.println("一番小さい数は");
+		System.out.println(min);
+		System.out.println("一番大きい数は");
+		System.out.println(max);
+	}
+
+}
