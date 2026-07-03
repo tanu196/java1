@@ -29,6 +29,16 @@ public class Student {
 		
 	}
 	
+	public void averageMax() {
+		double max = 0;
+		String maxName = "";
+		if(max < average) {
+			max = average;
+			maxName = name;
+		}
+		System.out.println("平均点が一番高い人：" + maxName);
+	}
+	
 	public void show() {
 		System.out.print("名前：" + name + "  ");
 		System.out.print("国語：" + japanScore + "点  ");

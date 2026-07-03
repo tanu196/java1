@@ -20,6 +20,7 @@ public class Exp65_challenge3 {
 		int mathScore = sc.nextInt();
 		System.out.print("英語：");
 		int engScore = sc.nextInt();
+		
 		student[5] = new Student(name , japScore , mathScore , engScore);
 		
 		
@@ -28,7 +29,13 @@ public class Exp65_challenge3 {
 			s.show();
 			
 		}
- 
+		
+		//for文version
+		
+		for(int i = 0 ; i < student.length ; i++) {
+			student[i].setAverage();
+			student[i].show();
+		}
 	}
 
 }   
