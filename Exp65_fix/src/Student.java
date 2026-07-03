@@ -11,7 +11,14 @@ public class Student {
 	}
 	
 	public void setAverage() {
-		average = (japanScore + mathScore + engScore) /3;
+		average = (japanScore + mathScore + engScore) /3.0;
+	}
+	
+	public void setScannerAverage(String name , int japanScore , int mathScore , int engScore) {
+		this.name = name;
+		this.japanScore = japanScore;
+		this.mathScore = mathScore;
+		this.engScore = engScore;
 	}
 
 	public Student(String name, int japanScore, int mathScore, int engScore) {

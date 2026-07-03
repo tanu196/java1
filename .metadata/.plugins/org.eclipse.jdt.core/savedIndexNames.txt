@@ -22,6 +22,7 @@ INDEX VERSION 1.134+C:\pleiades\2026-03\java1\.metadata\.plugins\org.eclipse.jdt
 37748518.index
 869209436.index
 1966657456.index
+33126366.index
 139410421.index
 3389115651.index
 1300130273.index
