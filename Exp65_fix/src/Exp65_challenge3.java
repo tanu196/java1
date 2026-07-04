@@ -27,7 +27,6 @@ public class Exp65_challenge3 {
 		for(Student s : student) {
 			s.setAverage();
 			s.show();
-			
 		}
 		
 		//for文version

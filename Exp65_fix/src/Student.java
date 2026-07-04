@@ -5,6 +5,7 @@ public class Student {
 	private int mathScore;
 	private int engScore;
 	private double average;
+	private String maxName;
 	
 	public Student() {
 		
@@ -31,12 +32,16 @@ public class Student {
 	
 	public void averageMax() {
 		double max = 0;
-		String maxName = "";
 		if(max < average) {
 			max = average;
 			maxName = name;
 		}
+	}
+	
+	
+	public void averageMaxShow() {
 		System.out.println("平均点が一番高い人：" + maxName);
+		
 	}
 	
 	public void show() {
