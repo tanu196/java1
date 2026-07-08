@@ -13,10 +13,25 @@ public class Program {
 //		System.out.println("3:\t残高\t確認");
 		
 		
-		System.out.println(0b1010001);
-		System.out.println(10e3);
+//		System.out.println(0b1010001);
+//		System.out.println(10e3);
+//		
+//		final int MAX = 100;
 		
-		final int MAX = 100;
+		
+//		int i = 3;
+//		int j = i++;
+//		System.out.println(j);
+//		
+//		j = i++;
+//		System.out.println(i);
+//		System.out.println(j);
+		
+		String s = "120";
+		System.out.println(s+30);
+		System.out.println(Integer.parseInt(s) + 30);
+		
+		
+		
 	}
-
 }
