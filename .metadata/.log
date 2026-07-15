@@ -9229,3 +9229,139 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2026-07-15 11:05:33.353 -----------------------------------------------
+eclipse.buildId=4.39.0.20260305-0817
+java.version=21.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 2 0 2026-07-15 11:05:44.497
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-07-15 11:05:44.497
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2026-07-15 11:05:45.317
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-07-15 11:05:45.317
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-07-15 11:05:54.872
+!MESSAGE [エラー] Binary LSP agent start failed. Retrying with JS agent.
+!STACK 0
+java.io.IOException: Could not find the language server binary
+	at com.microsoft.copilot.eclipse.core.lsp.LsStreamConnectionProvider.findAndValidateBinary(LsStreamConnectionProvider.java:105)
+	at com.microsoft.copilot.eclipse.core.lsp.LsStreamConnectionProvider.getBinaryLspCommands(LsStreamConnectionProvider.java:96)
+	at com.microsoft.copilot.eclipse.core.lsp.LsStreamConnectionProvider.startBinaryLspAgent(LsStreamConnectionProvider.java:84)
+	at com.microsoft.copilot.eclipse.core.lsp.LsStreamConnectionProvider.start(LsStreamConnectionProvider.java:68)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$0(LanguageServerWrapper.java:429)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+!ENTRY org.eclipse.lsp4e 2 0 2026-07-15 11:05:58.679
+!MESSAGE [LS:GitHub Copilot 言語サーバー][Warning]	[McpAutoApproveService] Invalid McpAutoApproveService config, resetting to empty undefined
+
+!ENTRY org.eclipse.lsp4e 2 0 2026-07-15 11:05:58.740
+!MESSAGE [LS:GitHub Copilot 言語サーバー][Warning]	[McpAutoApproveService] Invalid McpAutoApproveService config, resetting to empty undefined
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-07-15 11:05:59.002
+!MESSAGE [エラー] Failed to install terminal bundle
+!STACK 0
+org.osgi.framework.BundleException: Error while renaming bundle file to final location: C:\pleiades\2026-03\eclipse\configuration\org.eclipse.osgi\878\0\bundleFile
+	at org.eclipse.osgi.storage.Storage.getContentFile0(Storage.java:1059)
+	at org.eclipse.osgi.storage.Storage.getContentFile(Storage.java:1035)
+	at org.eclipse.osgi.storage.Storage.install(Storage.java:744)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.installBundle(BundleContextImpl.java:183)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.installBundle(BundleContextImpl.java:176)
+	at com.microsoft.copilot.eclipse.terminal.api.TerminalServiceManager.installOrUpdateBundle(TerminalServiceManager.java:360)
+	at com.microsoft.copilot.eclipse.terminal.api.TerminalServiceManager.installFromEmbeddedJar(TerminalServiceManager.java:288)
+	at com.microsoft.copilot.eclipse.terminal.api.TerminalServiceManager$2.run(TerminalServiceManager.java:249)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.FileSystemException: C:\pleiades\2026-03\eclipse\configuration\org.eclipse.osgi\878\0\bundleFile: プロセスはファイルにアクセスできません。別のプロセスが使用中です。
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:403)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:291)
+	at java.base/java.nio.file.Files.move(Files.java:1431)
+	at org.eclipse.osgi.storage.StorageUtil.move(StorageUtil.java:232)
+	at org.eclipse.osgi.storage.Storage.getContentFile0(Storage.java:1057)
+	... 8 more
+Root exception:
+java.nio.file.FileSystemException: C:\pleiades\2026-03\eclipse\configuration\org.eclipse.osgi\878\0\bundleFile: プロセスはファイルにアクセスできません。別のプロセスが使用中です。
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:403)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:291)
+	at java.base/java.nio.file.Files.move(Files.java:1431)
+	at org.eclipse.osgi.storage.StorageUtil.move(StorageUtil.java:232)
+	at org.eclipse.osgi.storage.Storage.getContentFile0(Storage.java:1057)
+	at org.eclipse.osgi.storage.Storage.getContentFile(Storage.java:1035)
+	at org.eclipse.osgi.storage.Storage.install(Storage.java:744)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.installBundle(BundleContextImpl.java:183)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.installBundle(BundleContextImpl.java:176)
+	at com.microsoft.copilot.eclipse.terminal.api.TerminalServiceManager.installOrUpdateBundle(TerminalServiceManager.java:360)
+	at com.microsoft.copilot.eclipse.terminal.api.TerminalServiceManager.installFromEmbeddedJar(TerminalServiceManager.java:288)
+	at com.microsoft.copilot.eclipse.terminal.api.TerminalServiceManager$2.run(TerminalServiceManager.java:249)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.microsoft.copilot.eclipse.terminal.api 4 0 2026-07-15 11:05:59.010
+!MESSAGE Failed to install terminal bundle: Error while renaming bundle file to final location: C:\pleiades\2026-03\eclipse\configuration\org.eclipse.osgi\878\0\bundleFile
+!STACK 0
+org.osgi.framework.BundleException: Error while renaming bundle file to final location: C:\pleiades\2026-03\eclipse\configuration\org.eclipse.osgi\878\0\bundleFile
+	at org.eclipse.osgi.storage.Storage.getContentFile0(Storage.java:1059)
+	at org.eclipse.osgi.storage.Storage.getContentFile(Storage.java:1035)
+	at org.eclipse.osgi.storage.Storage.install(Storage.java:744)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.installBundle(BundleContextImpl.java:183)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.installBundle(BundleContextImpl.java:176)
+	at com.microsoft.copilot.eclipse.terminal.api.TerminalServiceManager.installOrUpdateBundle(TerminalServiceManager.java:360)
+	at com.microsoft.copilot.eclipse.terminal.api.TerminalServiceManager.installFromEmbeddedJar(TerminalServiceManager.java:288)
+	at com.microsoft.copilot.eclipse.terminal.api.TerminalServiceManager$2.run(TerminalServiceManager.java:249)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.FileSystemException: C:\pleiades\2026-03\eclipse\configuration\org.eclipse.osgi\878\0\bundleFile: プロセスはファイルにアクセスできません。別のプロセスが使用中です。
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:403)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:291)
+	at java.base/java.nio.file.Files.move(Files.java:1431)
+	at org.eclipse.osgi.storage.StorageUtil.move(StorageUtil.java:232)
+	at org.eclipse.osgi.storage.Storage.getContentFile0(Storage.java:1057)
+	... 8 more
+Root exception:
+java.nio.file.FileSystemException: C:\pleiades\2026-03\eclipse\configuration\org.eclipse.osgi\878\0\bundleFile: プロセスはファイルにアクセスできません。別のプロセスが使用中です。
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:403)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:291)
+	at java.base/java.nio.file.Files.move(Files.java:1431)
+	at org.eclipse.osgi.storage.StorageUtil.move(StorageUtil.java:232)
+	at org.eclipse.osgi.storage.Storage.getContentFile0(Storage.java:1057)
+	at org.eclipse.osgi.storage.Storage.getContentFile(Storage.java:1035)
+	at org.eclipse.osgi.storage.Storage.install(Storage.java:744)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.installBundle(BundleContextImpl.java:183)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.installBundle(BundleContextImpl.java:176)
+	at com.microsoft.copilot.eclipse.terminal.api.TerminalServiceManager.installOrUpdateBundle(TerminalServiceManager.java:360)
+	at com.microsoft.copilot.eclipse.terminal.api.TerminalServiceManager.installFromEmbeddedJar(TerminalServiceManager.java:288)
+	at com.microsoft.copilot.eclipse.terminal.api.TerminalServiceManager$2.run(TerminalServiceManager.java:249)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 2 0 2026-07-15 11:06:09.346
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
