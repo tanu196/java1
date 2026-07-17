@@ -22,61 +22,106 @@ public class Plan {
 
 		//モードの選択
 		if (judge == 1) {
-			Plan1 plan1 = new Plan1();
-			plan1.gameStart();
+			cpuHand();
+			myHand();
+			winJudge();
 		} else if (judge == 2) {
-			Plan2 plan2 = new Plan2();
-			plan2.gameStart();
+			myHand();
+			cpuHand();
+			winJudge();
 		} else if (judge == 3) {
-			Plan3 plan3 = new Plan3();
-			plan3.gameStart();
+			myHand();
+			strongCpu();
+			winJudge();
 		}
 	}
 
-	public void winJudge() {
-		boolean flag = false;
-		while (!flag) {
+	public void myHand() {//自分の手を決める
+		System.out.println("じゃんけんの手を選んでください");
+		System.out.println("０：グー");
+		System.out.println("１：チョキ");
+		System.out.println("２：パー");
+		System.out.print("番号を入力：");
+		hand = game.getScanner().nextInt();
+		if (hand == 0) {
+			System.out.println("あなたの手：グー");
+		} else if (hand == 1) {
+			System.out.println("あなたの手：チョキ");
+		} else if (hand == 2) {
+			System.out.println("あなたの手：パー");
+		}
+	}
 
-			if (hand == 0 && cpuHand == 0) {//自分の手がグー
-				System.out.println("あいこでやんす");
-				System.out.println("もう一度じゃんけんします");
-			} else if (hand == 0 && cpuHand == 1) {
-				System.out.println("あなたの勝ちでやんす");
-				System.out.println("ゲームを終了します");
-				flag = true;
-			} else if (hand == 0 && cpuHand == 2) {
-				System.out.println("CPUの勝ちでやんす");
-				System.out.println("ゲームを終了します");
-				flag = true;
-			}
+	public void cpuHand() {
+		cpuHand = game.getRandom().nextInt(3);
+		if (cpuHand == 0) {
+			System.out.println("CPUの手：グー");
+		} else if (cpuHand == 1) {
+			System.out.println("CPUの手：チョキ");
+		} else if (cpuHand == 2) {
+			System.out.println("CPUの手：パー");
+		}
+	}
 
-			if (hand == 1 && cpuHand == 0) {//自分の手がチョキ
-				System.out.println("CPUの勝ちでやんす");
-				System.out.println("ゲームを終了します");
-				flag = true;
-			} else if (hand == 1 && cpuHand == 1) {
-				System.out.println("あいこでやんす");
-				System.out.println("もう一度じゃんけんします");
-			} else if (hand == 1 && cpuHand == 2) {
-				System.out.println("あなたの勝ちでやんす");
-				System.out.println("ゲームを終了します");
-				flag = true;
-			}
+	public void winJudge() {//勝敗判定
 
-			if (hand == 2 && cpuHand == 0) {//自分の手がパー
-				System.out.println("あなたの勝ちでやんす");
-				System.out.println("ゲームを終了します");
-				flag = true;
-			} else if (hand == 2 && cpuHand == 1) {
-				System.out.println("CPUの勝ちでやんす");
-				System.out.println("ゲームを終了します");
-				flag = true;
-			} else if (hand == 2 && cpuHand == 2) {
-				System.out.println("あいこでやんす");
-				System.out.println("もう一度じゃんけんします");
-			}
+		if (hand == 0 && cpuHand == 0) {//自分の手がグー
+			drowShow();
+			startUp();
+		} else if (hand == 0 && cpuHand == 1) {
+			winShow();
+		} else if (hand == 0 && cpuHand == 2) {
+			loseShow();
 		}
 
+		if (hand == 1 && cpuHand == 0) {//自分の手がチョキ
+			loseShow();
+		} else if (hand == 1 && cpuHand == 1) {
+			drowShow();
+			startUp();
+		} else if (hand == 1 && cpuHand == 2) {
+			winShow();
+		}
+
+		if (hand == 2 && cpuHand == 0) {//自分の手がパー
+			winShow();
+		} else if (hand == 2 && cpuHand == 1) {
+			loseShow();
+		} else if (hand == 2 && cpuHand == 2) {
+			drowShow();
+			startUp();
+		}
+	}
+
+	public void winShow() {//表示
+		System.out.println("あなたの勝ちでやんす");
+		System.out.println("ゲームを終了します");
+	}
+
+	public void loseShow() {//表示
+		System.out.println("CPUの勝ちでやんす");
+		System.out.println("ゲームを終了します");
+	}
+
+	public void drowShow() {//表示
+		System.out.println("あいこでやんす");
+		System.out.println("もう一度じゃんけんします");
+	}
+	
+	
+	
+	//cpu強い時のモード
+	public void strongCpu() {
+		if (hand == 1) {
+			cpuHand = 0;
+			System.out.println("CPUの手：グー");
+		} else if (hand == 2) {
+			cpuHand = 1;
+			System.out.println("CPUの手：チョキ");
+		} else if (hand == 0) {
+			cpuHand = 2;
+			System.out.println("CPUの手：パー");
+		}
 	}
 
 }
