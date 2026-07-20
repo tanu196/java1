@@ -6,6 +6,8 @@ class ScoreJudge2 {
         for (int i = 0; i < scores.length; i++) {
             if (scores[i] >= 80) {
                 System.out.print((i + 1) + "人目：合格 ");
+            }else if (scores[i] >= 59) {
+            	System.out.print((i+ 1) + "人目：要努力 ");
             } else if (scores[i] < 60) {
                 System.out.print((i + 1) + "人目：再テスト ");
             }

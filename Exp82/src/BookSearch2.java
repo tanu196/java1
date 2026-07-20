@@ -5,13 +5,16 @@ class BookSearch2 {
         int[] bookPrices = {2500, 2200, 2800};
         String searchTitle = "Python基礎";     // 今回は別のキーワード
         boolean isFind = false;
-        for (int i = 0; i < bookTitles.length; i++) {
-            if (bookTitles[i].equals(searchTitle)) {
-                System.out.print(bookPrices[i]);
-                isFind = true;
-                break;
-            }
+        
+        for(int i = 0 ; i < bookTitles.length ; i++) {
+        	
+        	if(bookTitles[i].equals(searchTitle)) {
+        		System.out.println(bookTitles[i]);
+        		isFind = true;
+        		break;
+        	}
         }
+        
         if (!isFind) {
             System.out.print("該当する本はありません。");
         }

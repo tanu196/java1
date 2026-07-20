@@ -6,12 +6,17 @@ class MusicSearch2 {
         int[] stocks = {5, 3, 10};
         String keyword = "Bowie";              // 配列に無いキーワード
         boolean found = false;
-        for (int i = 0; i < artists.length; i++) {
-            if (artists[i].equals(keyword)) {
-                System.out.print("アーティスト名：" + artists[i] + " ");
-                found = true;
-            }
+        for(int i = 0 ; i < albums.length ; i++) {
+        	if(keyword.equals(albums[i])) {
+        		System.out.println(artists[i]);
+        		found = true;
+        		break;
+   
+        	}
         }
+        
+        
+        
         if (!found) {
             System.out.print("該当商品はありません。");
         }
