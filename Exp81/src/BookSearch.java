@@ -6,15 +6,18 @@ class BookSearch {
         int[] bookPrices = {2500, 2200, 2800};
         String searchTitle = "Java入門";
         boolean isFind = false;
-        for (int i = 0; i < bookTitles.length; i++) {
+        int i;
+        for (i= 0; i < bookTitles.length; i++) {
             if (bookTitles[i].equals(searchTitle)) {
-                System.out.print(bookPrices[i]);
+                System.out.println(bookPrices[i]);
                 isFind = true;
                 break;
             }
         }
         if (!isFind) {
             System.out.print("該当する本はありません。");
+        }else {
+        	System.out.println(bookPrices[i] + "円");
         }
     }
 }
