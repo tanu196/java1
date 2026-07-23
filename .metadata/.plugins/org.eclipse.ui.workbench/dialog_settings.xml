@@ -53,13 +53,15 @@
 		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
 		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\石丸育夢\Downloads\第16回_弱点まとめ\配布用"/>
+			<item value="C:\Users\石丸育夢\Downloads\第15回_実行時引数\配布用"/>
 			<item value="C:\Users\石丸育夢\Desktop\練習ファイル\java1"/>
 		</list>
 		<section name="FileSystemImportWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="-20"/>
-			<item key="DIALOG_Y_ORIGIN" value="-89"/>
+			<item key="DIALOG_X_ORIGIN" value="128"/>
+			<item key="DIALOG_Y_ORIGIN" value="72"/>
 			<item key="DIALOG_WIDTH" value="744"/>
-			<item key="DIALOG_HEIGHT" value="623"/>
+			<item key="DIALOG_HEIGHT" value="622"/>
 			<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Yu Gothic UI"/>
 		</section>
 	</section>

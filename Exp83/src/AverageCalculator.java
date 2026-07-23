@@ -4,7 +4,7 @@ class AverageCalculator {
     public static void main(String[] args) {
         int num1 = Integer.parseInt(args[0]);
         int num2 = Integer.parseInt(args[1]);
-        int num3 = Integer.parseInt(args[2]);
+        double num3 = Double.parseDouble(args[2]);
         double average = (num1 + num2 + num3) / 3.0;
         System.out.print("Average: " + average);
     }
