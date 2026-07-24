@@ -20,18 +20,18 @@ class EscapeDemo {
 //        char b = (char) a;
 //        
     	
-    	String line = "にいの";
-    	String cal = "にいの";
-    	int num = 0;
-    	
-    	
-    	
-        if(line.equals(cal)) {
-        	System.out.println("正解");
-        }else {
-        	System.out.println("不正解");
-        }
-        
+//    	String line = "にいの";
+//    	String cal = "にいの";
+//    	int num = 0;
+//    	
+//    	
+//    	
+//        if(line.equals(cal)) {
+//        	System.out.println("正解");
+//        }else {
+//        	System.out.println("不正解");
+//        }
+//        
         
 //        if(num == 0) {
 //        	System.out.println("正解");
@@ -39,6 +39,13 @@ class EscapeDemo {
 //        	System.out.println("不正解");
 //        }
 //        
-        
+       
+    	
+    	
+    	
+    	
+    	
+    	
+    	
     }
 }
