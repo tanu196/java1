@@ -38,7 +38,7 @@ public class Teach3 {
 		};
 
 		//アローswitch文
-		String num = "";
+		String num = "asd";
 
 		switch (dayNumber) {
 		case 1 -> num = "金曜日";
@@ -61,6 +61,7 @@ public class Teach3 {
 		
 		System.out.println("判定終了");
 		
+		num.charAt(4);q
 		
 		
 		
