@@ -61,7 +61,7 @@ public class Teach3 {
 		
 		System.out.println("判定終了");
 		
-		num.charAt(4);q
+		num.charAt(4);
 		
 		
 		
