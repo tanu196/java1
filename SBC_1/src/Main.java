@@ -1,5 +1,10 @@
 public class Main {
 	public static void main(String[] args) {
-		System.out.println("num");
+		Calculator.add(3,97);
+		Calculator.subtract(100 , 23);
+		
+		
+		
+		
 	}
 }
